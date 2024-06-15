@@ -12,7 +12,7 @@ import java.util.List;
  *
  */
 public class Project {
-  private Project projectId;
+  private Integer projectId;
   private String projectName;
   private BigDecimal estimatedHours;
   private BigDecimal actualHours;
@@ -23,12 +23,12 @@ public class Project {
   private List<Step> steps = new LinkedList<>();
   private List<Category> categories = new LinkedList<>();
 
-  public Project getProjectId() {
+  public Integer getProjectId() {
     return projectId;
   }
 
-  public void setProjectId(Project project) {
-    this.projectId = project;
+  public void setProjectId(Integer integer) {
+    this.projectId = integer;
   }
 
   public String getProjectName() {
