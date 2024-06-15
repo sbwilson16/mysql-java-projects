@@ -203,10 +203,10 @@ public Optional<Project> fetchProjectById(Integer projectId) {
 			
 			while(rs.next()) {
 				categories.add(extract(rs, Category.class));			}
-		}
+		
 		
 		return categories; 
-		}
+		}}
 	}
 }
 

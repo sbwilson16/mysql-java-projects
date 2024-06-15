@@ -42,6 +42,5 @@ material_name VARCHAR(128),
 num_required INT,
 cost DECIMAL(7,2),
 PRIMARY KEY (material_id),
-FOREIGN KEY (project_id) REFERENCES project (project_id) ON DELETE CASCADE,
 FOREIGN KEY (material_name) REFERENCES material (material_name)
 );
